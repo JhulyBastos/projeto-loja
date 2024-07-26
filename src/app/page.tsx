@@ -1,7 +1,11 @@
+import { Card } from "@/components/Card";
+import { shoes } from "@/data/shoes";
+import { Shoe } from "@/types/Shoe";
+
 export default function Home() {
   return (
-    <div>
-      <div className="w-full h-screen bg-zinc-50">
+    <div className="w-full h-screen bg-white">
+      <div className="">
         <p className="text-zinc-950 text-center py-3">
           Frete grátis para todo o Brasil
         </p>
@@ -29,9 +33,14 @@ export default function Home() {
             Os melhores em só lugar
           </h1>
           <p className="  text-zinc-950 mt-4">
-            A marca Jordan na JordanShoes é a escolha certa para <br />
-            os amantes de sneakers que buscam estilo e conforto.
+            A marca Jordan na JordanShoes é a escolha certa para os amantes de
+            sneakers que buscam estilo e conforto.
           </p>
+        </div>
+        <div className="grid grid-cols-3 place-items-center">
+          {shoes.map((shoe: Shoe) => (
+            <Card key={shoe.id} shoe={shoe} />
+          ))}
         </div>
       </div>
     </div>
