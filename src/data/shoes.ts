@@ -33,7 +33,7 @@ export const shoes: Shoe[] = [
 
   {
     id: 5,
-    sobre: "Air Jordan 1 Mid GS Light Smoke Grey",
+    sobre: "Air Jordan 1 Mid GS Smoke Grey",
     imagem: "/img/jordan-grey.png",
     nome: "Tênis Air Jordan",
     preco: "R$ 1.199,99",
@@ -41,7 +41,7 @@ export const shoes: Shoe[] = [
 
   {
     id: 6,
-    sobre: "Air Jordan 1 High Zoom CMFT Tropical Twist",
+    sobre: "Air Jordan 1 High Zoom Twist",
     imagem: "/img/jordan-tropical-twist.png",
     nome: "Tênis Air Jordan",
     preco: "R$ 1.199,99",

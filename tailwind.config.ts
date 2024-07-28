@@ -11,6 +11,10 @@ const config: Config = {
       backgroundImage: {
         background: "url('/img/jordan.png')",
       },
+      colors: {
+        "dark-10": "#F3F7FF",
+        "dark-20": "#7CA2F4",
+      },
     },
   },
   plugins: [],

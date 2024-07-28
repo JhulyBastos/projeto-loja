@@ -4,7 +4,7 @@ import { Shoe } from "@/types/Shoe";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen bg-white">
+    <div className=" bg-white">
       <div className="">
         <p className="text-zinc-950 text-center py-3">
           Frete grátis para todo o Brasil
@@ -37,11 +37,12 @@ export default function Home() {
             sneakers que buscam estilo e conforto.
           </p>
         </div>
-        <div className="grid grid-cols-3 place-items-center">
+        <div className="grid grid-cols-3 place-items-center gap-10 px-8">
           {shoes.map((shoe: Shoe) => (
             <Card key={shoe.id} shoe={shoe} />
           ))}
         </div>
+        <div className="py-20" />
       </div>
     </div>
   );
