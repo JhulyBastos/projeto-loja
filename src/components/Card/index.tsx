@@ -1,3 +1,4 @@
+import { Plus } from "lucide-react";
 import { Shoe } from "@/types/Shoe";
 import { Button } from "../Button";
 
@@ -14,7 +15,9 @@ export function Card({ shoe }: CardProps) {
         </div>
         <div className="flex justify-between items-center py-2">
           <p className="text-black">{shoe.sobre}</p>
-          <Button> Saber mais</Button>
+          <Button>
+            <Plus className="size-5" /> Comprar
+          </Button>
         </div>
         <p className="text-dark-20">{shoe.nome}</p>
         <p className="text-black">{shoe.preco}</p>
