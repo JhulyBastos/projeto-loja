@@ -1,5 +1,5 @@
 "use client";
-import { Plus } from "lucide-react";
+import { Plus, ShoppingCart } from "lucide-react";
 import { Shoe } from "@/types/Shoe";
 import { Button } from "../Button";
 import { useState } from "react";
@@ -31,7 +31,7 @@ export function Card({ shoe }: CardProps) {
         <div className="flex justify-between items-center py-2">
           <p className="text-black">{shoe.sobre}</p>
           <Button onClick={openTennisInformationModal}>
-            <Plus className="size-5" /> Comprar
+            <ShoppingCart className="size-5" /> Comprar
           </Button>
         </div>
         <p className="text-dark-20">{shoe.nome}</p>

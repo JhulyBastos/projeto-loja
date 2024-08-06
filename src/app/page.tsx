@@ -2,7 +2,7 @@ import { Card } from "@/components/Card";
 import { TennisInformation } from "@/components/TennisInformation";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";
-import { ShoppingCart, Search } from "lucide-react";
+
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -10,16 +10,10 @@ export default function Home() {
   return (
     <div className=" bg-white">
       <div>
-        <div className="flex items-center justify-between px-8">
-          <div>
-            <Search color="black" className="size-7" />
-          </div>
+        <div className="flex items-center justify-center px-8">
           <p className="text-zinc-950 text-center py-3">
             Frete grátis para todo o Brasil
           </p>
-          <button type="button">
-            <ShoppingCart color="black" className="size-7" />
-          </button>
         </div>
 
         <div className="">
