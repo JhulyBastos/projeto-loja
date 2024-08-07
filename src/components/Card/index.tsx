@@ -2,9 +2,7 @@
 import { Plus, ShoppingCart } from "lucide-react";
 import { Shoe } from "@/types/Shoe";
 import { Button } from "../Button";
-import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { TennisInformation } from "../TennisInformation";
 
 interface CardProps {
   shoe: Shoe;
@@ -12,16 +10,7 @@ interface CardProps {
 
 export function Card({ shoe }: CardProps) {
   const router = useRouter();
-  const [isTennisInformationModalOpen, setIsTennisInformationModalOpen] =
-    useState(false);
 
-  function openTennisInformationModal() {
-    setIsTennisInformationModalOpen(true);
-  }
-
-  function closeTennisInformationModal() {
-    setIsTennisInformationModalOpen(false);
-  }
   return (
     <div>
       <div className="w-[350px] h-[200px]">
@@ -30,18 +19,13 @@ export function Card({ shoe }: CardProps) {
         </div>
         <div className="flex justify-between items-center py-2">
           <p className="text-black">{shoe.sobre}</p>
-          <Button onClick={openTennisInformationModal}>
+          <Button onClick={() => router.push(`${shoe.id}`)}>
             <ShoppingCart className="size-5" /> Comprar
           </Button>
         </div>
         <p className="text-dark-20">{shoe.nome}</p>
         <p className="text-black">{shoe.preco}</p>
       </div>
-      {isTennisInformationModalOpen && (
-        <TennisInformation
-          closeTennisInformationModal={closeTennisInformationModal}
-        />
-      )}
     </div>
   );
 }

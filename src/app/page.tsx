@@ -1,10 +1,6 @@
 import { Card } from "@/components/Card";
-import { TennisInformation } from "@/components/TennisInformation";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";
-
-import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 export default function Home() {
   return (
