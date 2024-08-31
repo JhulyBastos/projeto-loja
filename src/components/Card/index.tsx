@@ -1,7 +1,7 @@
 "use client";
 import { Plus, ShoppingCart } from "lucide-react";
 import { Shoe } from "@/types/Shoe";
-import { Button } from "../Button";
+import { ButtonCard } from "../Button";
 import { useRouter } from "next/navigation";
 
 interface CardProps {
@@ -19,9 +19,9 @@ export function Card({ shoe }: CardProps) {
         </div>
         <div className="flex justify-between items-center py-2">
           <p className="text-black">{shoe.sobre}</p>
-          <Button onClick={() => router.push(`${shoe.id}`)}>
+          <ButtonCard onClick={() => router.push(`/${shoe.id}`)}>
             <ShoppingCart className="size-5" /> Comprar
-          </Button>
+          </ButtonCard>
         </div>
         <p className="text-dark-20">{shoe.nome}</p>
         <p className="text-black">{shoe.preco}</p>

@@ -13,14 +13,14 @@ export const shoes: Shoe[] = [
     sobre: "Air Jordan 1 Mid Dutch Green",
     imagem: "/img/jordan-green.png",
     nome: "Tênis Air Jordan",
-    preco: "R$ 1.199,99",
+    preco: "R$ 2.199,99",
   },
   {
     id: 3,
     sobre: "Air Jordan 1 Mid Grey Camo",
     imagem: "/img/jordan-grey-camo.png",
     nome: "Tênis Air Jordan",
-    preco: "R$ 1.199,99",
+    preco: "R$ 1.295,99",
   },
 
   {
@@ -28,7 +28,7 @@ export const shoes: Shoe[] = [
     sobre: "Air Jordan 1 Mid Dutch Green",
     imagem: "/img/jordan-purple.png",
     nome: "Tênis Air Jordan",
-    preco: "R$ 1.199,99",
+    preco: "R$ 3.199,99",
   },
 
   {
@@ -36,7 +36,7 @@ export const shoes: Shoe[] = [
     sobre: "Air Jordan 1 Mid GS Smoke Grey",
     imagem: "/img/jordan-grey.png",
     nome: "Tênis Air Jordan",
-    preco: "R$ 1.199,99",
+    preco: "R$ 2.500,99",
   },
 
   {
@@ -44,6 +44,6 @@ export const shoes: Shoe[] = [
     sobre: "Air Jordan 1 High Zoom Twist",
     imagem: "/img/jordan-tropical-twist.png",
     nome: "Tênis Air Jordan",
-    preco: "R$ 1.199,99",
+    preco: "R$ 2.299,99",
   },
 ];
