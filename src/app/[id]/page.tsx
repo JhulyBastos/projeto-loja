@@ -2,6 +2,7 @@
 import { Button } from "@/components/Button";
 import CartSteps from "@/components/CartSteps";
 import { Input } from "@/components/Input";
+import ShippingDetails from "@/components/ShippingDetails";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";
 import {
@@ -35,9 +36,13 @@ export default function TennisInformation() {
     <main className="w-full h-screen bg-white">
       <div className="flex justify-center gap-20 py-28">
         <div>
-          <CartSteps />
+          <div>
+            <CartSteps />
+          </div>
+          <div>
+            <ShippingDetails />
+          </div>
         </div>
-        <div></div>
         <div className=" flex flex-col gap-2">
           <p className="text-black text-sm">Resumo do pedido</p>
           <div className="w-[350px] h-[150px]">
@@ -57,7 +62,6 @@ export default function TennisInformation() {
           </div>
           <div className="flex justify-between">
             <div>
-              {" "}
               <Input placeholder="Cupom de desconto"></Input>
             </div>
             <div>
@@ -75,6 +79,7 @@ export default function TennisInformation() {
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </main>
   );
