@@ -2,6 +2,8 @@
 import { Button } from "@/components/Button";
 import CartSteps from "@/components/CartSteps";
 import { Input } from "@/components/Input";
+import Payment from "@/components/Payment";
+import Profile from "@/components/Profile";
 import ShippingDetails from "@/components/ShippingDetails";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";
