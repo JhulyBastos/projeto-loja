@@ -21,7 +21,7 @@ export default function Payment() {
             <p className="text-black text-sm">Número do cartão</p>
             <Input placeholder="Número do cartão" />
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-4">
             <div>
               <p className="text-black text-sm">Expiração</p>
               <Input variant="secondary" placeholder="Expiração" className="" />

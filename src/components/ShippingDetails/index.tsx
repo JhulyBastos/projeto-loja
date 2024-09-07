@@ -11,14 +11,24 @@ export default function ShippingDetails() {
         <div>
           <h1 className="text-black text-xl py-7">Detalhes do envio</h1>
           <div className="flex flex-col  gap-1">
-            <div className="flex justify-between">
+            <div className="flex justify-between gap-5">
               <div>
                 <p className="text-black text-sm">Estado</p>
-                <Input variant="secondary" placeholder="Estado" className="" />
+                <div className="flex items-center">
+                  <Input
+                    variant="secondary"
+                    placeholder="Estado"
+                    className=""
+                  />
+                  <ChevronDown color="black" className="w-5 bg-slate-400" />
+                </div>
               </div>
               <div>
                 <p className="text-black text-sm">Cidade</p>
-                <Input placeholder="Cidade" className="" />
+                <div className="flex items-center">
+                  <Input placeholder="Cidade" className="" />
+                  <ChevronDown color="black" className="w-5 bg-slate-400" />
+                </div>
               </div>
             </div>
             <div className="flex justify-between">
