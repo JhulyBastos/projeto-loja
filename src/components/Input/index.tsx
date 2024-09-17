@@ -1,13 +1,14 @@
 import { ComponentProps } from "react";
 
 interface InputProps extends ComponentProps<"input"> {
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
 }
 
 export function Input({ variant = "primary", ...props }: InputProps) {
   const variants = {
     primary: "",
     secondary: "w-[180px]",
+    tertiary: "w-[170px] rounded-l-lg border-y border-l",
   };
   return (
     <input

@@ -15,19 +15,19 @@ export default function ShippingDetails() {
               <div>
                 <p className="text-black text-sm">Estado</p>
                 <div className="flex items-center">
-                  <Input
-                    variant="secondary"
-                    placeholder="Estado"
-                    className=""
-                  />
-                  <ChevronDown color="black" className="w-5 bg-slate-400" />
+                  <Input variant="tertiary" placeholder="Estado" className="" />
+                  <div className="w-[40px] h-[40px] bg-dark-30 flex items-center justify-center rounded-r-lg border-y border-r border-black/5">
+                    <ChevronDown color="black" className="w-5 " />
+                  </div>
                 </div>
               </div>
               <div>
                 <p className="text-black text-sm">Cidade</p>
                 <div className="flex items-center">
-                  <Input placeholder="Cidade" className="" />
-                  <ChevronDown color="black" className="w-5 bg-slate-400" />
+                  <Input variant="tertiary" placeholder="Cidade" className="" />
+                  <div className="w-[40px] h-[40px] bg-dark-30 flex items-center justify-center rounded-r-lg border-y border-r  border-black/5">
+                    <ChevronDown color="black" className="w-5" />
+                  </div>
                 </div>
               </div>
             </div>
