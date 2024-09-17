@@ -11,27 +11,31 @@ export default function ShippingDetails() {
         <div>
           <h1 className="text-black text-xl py-7">Detalhes do envio</h1>
           <div className="flex flex-col  gap-1">
-            <div className="flex justify-between gap-5">
+            <div className="flex justify-between">
               <div>
                 <p className="text-black text-sm">Estado</p>
                 <div className="flex items-center">
                   <Input variant="tertiary" placeholder="Estado" className="" />
                   <div className="w-[40px] h-[40px] bg-dark-30 flex items-center justify-center rounded-r-lg border-y border-r border-black/5">
-                    <ChevronDown color="black" className="w-5 " />
+                    <button>
+                      <ChevronDown color="grey" className="w-5 " />
+                    </button>
                   </div>
                 </div>
               </div>
               <div>
                 <p className="text-black text-sm">Cidade</p>
+
                 <div className="flex items-center">
                   <Input variant="tertiary" placeholder="Cidade" className="" />
                   <div className="w-[40px] h-[40px] bg-dark-30 flex items-center justify-center rounded-r-lg border-y border-r  border-black/5">
-                    <ChevronDown color="black" className="w-5" />
+                    {" "}
+                    <ChevronDown color="grey" className="w-5" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex gap-5">
               <div>
                 <p className="text-black text-sm">Rua</p>
                 <Input placeholder="Rua" className="" />
@@ -41,7 +45,7 @@ export default function ShippingDetails() {
                 <Input variant="secondary" placeholder="Número" className="" />
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex gap-5">
               <div>
                 <p className="text-black text-sm">Bairro</p>
                 <Input placeholder="Bairro" className="" />
