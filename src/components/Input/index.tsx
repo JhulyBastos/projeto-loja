@@ -6,7 +6,7 @@ interface InputProps extends ComponentProps<"input"> {
 
 export function Input({ variant = "primary", ...props }: InputProps) {
   const variants = {
-    primary: "w-[250px]   rounded border ",
+    primary: "w-full   rounded border ",
     secondary: "w-[250px] rounded border",
     tertiary: "w-[210px] rounded-l-lg border-y border-l",
   };

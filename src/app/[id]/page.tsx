@@ -42,7 +42,7 @@ export default function TennisInformation() {
             <CartSteps />
           </div>
           <div>
-            <ShippingDetails />
+            <Profile />
           </div>
         </div>
         <div className=" flex flex-col gap-2">

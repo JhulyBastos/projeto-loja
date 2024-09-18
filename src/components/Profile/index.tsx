@@ -1,6 +1,7 @@
 import { useRouter } from "next/navigation";
 import { Button } from "../Button";
 import { Input } from "../Input";
+import Payment from "../Payment";
 
 export default function Profile() {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function Profile() {
         <div className="flex flex-col  gap-6">
           <div>
             <p className="text-black text-sm">Email</p>
-            <Input placeholder="Email" />
+            <Input type="email" placeholder="Email" />
           </div>
           <div>
             <p className="text-black text-sm">Senha</p>
@@ -27,7 +28,10 @@ export default function Profile() {
         >
           Cancelar pedido
         </Button>
-        <Button classname="w-[170px] px-2 font-normal">
+        <Button
+          onClick={() => router.push("")}
+          classname="w-[170px] px-2 font-normal"
+        >
           Continuar comprando
         </Button>
       </div>
