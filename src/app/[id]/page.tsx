@@ -7,13 +7,7 @@ import Profile from "@/components/Profile";
 import ShippingDetails from "@/components/ShippingDetails";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";
-import {
-  UserRound,
-  Package,
-  CircleDollarSign,
-  ShoppingCart,
-  MoveRight,
-} from "lucide-react";
+
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -48,7 +42,7 @@ export default function TennisInformation() {
           </div>
           <div>
             {step == 0 ? <Profile nextStep={nextStep} /> : null}
-            {step == 1 ? <Payment /> : null}
+            {step == 1 ? <Payment nextStep={nextStep} /> : null}
             {step == 2 ? <ShippingDetails /> : null}
           </div>
         </div>
