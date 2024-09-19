@@ -22,6 +22,7 @@ export default function TennisInformation() {
   const pathname = usePathname();
   const id = pathname.replace("/", "");
   const [shoe, setShoe] = useState<Shoe>();
+  const [step, setStep] = useState(0);
   useEffect(() => {
     if (id) {
       const foundShoe = shoes.find(
@@ -31,6 +32,10 @@ export default function TennisInformation() {
     }
   }, [id]);
 
+  function nextStep() {
+    setStep(step + 1);
+  }
+
   if (!shoe) {
     return <div>Carregando...</div>;
   }
@@ -39,10 +44,12 @@ export default function TennisInformation() {
       <div className="flex justify-center gap-20 py-28">
         <div>
           <div>
-            <CartSteps />
+            <CartSteps step={step} />
           </div>
           <div>
-            <Profile />
+            {step == 0 ? <Profile nextStep={nextStep} /> : null}
+            {step == 1 ? <Payment /> : null}
+            {step == 2 ? <ShippingDetails /> : null}
           </div>
         </div>
         <div className=" flex flex-col gap-2">

@@ -3,7 +3,11 @@ import { Button } from "../Button";
 import { Input } from "../Input";
 import Payment from "../Payment";
 
-export default function Profile() {
+export interface StepProps {
+  nextStep: () => void;
+}
+
+export default function Profile({ nextStep }: StepProps) {
   const router = useRouter();
   return (
     <div className="flex flex-col gap-10">
@@ -28,10 +32,7 @@ export default function Profile() {
         >
           Cancelar pedido
         </Button>
-        <Button
-          onClick={() => router.push("")}
-          classname="w-[170px] px-2 font-normal"
-        >
+        <Button onClick={nextStep} classname="w-[170px] px-2 font-normal">
           Continuar comprando
         </Button>
       </div>
