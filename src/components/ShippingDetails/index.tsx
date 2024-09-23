@@ -65,7 +65,7 @@ export default function ShippingDetails() {
           Cancelar pedido
         </Button>
         <Button
-          onClick={() => router.push("/ConfirmedPurchase")}
+          onClick={() => router.push("/Confirmed")}
           classname="w-[170px] px-2 font-normal"
         >
           Finalizar pedido
