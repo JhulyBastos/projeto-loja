@@ -7,7 +7,6 @@ import Profile from "@/components/Profile";
 import ShippingDetails from "@/components/ShippingDetails";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";
-
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 

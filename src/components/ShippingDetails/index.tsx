@@ -1,9 +1,14 @@
+"use client";
 import { useRouter } from "next/navigation";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { ChevronDown } from "lucide-react";
+import { Shoe } from "@/types/Shoe";
+interface CardProps {
+  shoe: Shoe;
+}
 
-export default function ShippingDetails() {
+export default function ShippingDetails({ shoe }: CardProps) {
   const router = useRouter();
   return (
     <div className=" w-full h-screen flex flex-col gap-10 px-4">
@@ -65,7 +70,7 @@ export default function ShippingDetails() {
           Cancelar pedido
         </Button>
         <Button
-          onClick={() => router.push("/Confirmed")}
+          onClick={() => router.push(`/Confirmed`)}
           classname="w-[170px] px-2 font-normal"
         >
           Finalizar pedido

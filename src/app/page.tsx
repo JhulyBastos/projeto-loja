@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card } from "@/components/Card";
 import { shoes } from "@/data/shoes";
 import { Shoe } from "@/types/Shoe";

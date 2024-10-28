@@ -1,6 +1,7 @@
 import { useRouter } from "next/navigation";
 import { Button } from "../Button";
 import { Input } from "../Input";
+import { useFormContext } from "react-hook-form";
 
 export interface StepProps {
   nextStep: () => void;
@@ -8,22 +9,19 @@ export interface StepProps {
 
 export default function Payment({ nextStep }: StepProps) {
   const router = useRouter();
+  const metodos = useFormContext();
   return (
     <div className="flex flex-col gap-10">
       <div>
         <h1 className="text-black text-xl py-7">Detalhes do pagamento</h1>
         <div className="flex flex-col  gap-6">
           <div>
-            <p className="text-black text-sm">Usar cartão salvo</p>
-            <Input placeholder="Usar cartão salvo" />
+            <p className="text-black text-sm">Número do cartão</p>
+            <Input placeholder="Número do cartão" />
           </div>
           <div>
             <p className="text-black text-sm">Nome no cartão</p>
-            <Input placeholder="Nome no cartão" />
-          </div>
-          <div>
-            <p className="text-black text-sm">Número do cartão</p>
-            <Input placeholder="Número do cartão" />
+            <Input type="number" placeholder="Nome no cartão" />
           </div>
           <div className="flex justify-between gap-4">
             <div>
