@@ -33,7 +33,7 @@ export default function Confirmed() {
               <div className=" flex justify-center items-center text-center bg-dark-10">
                 <img className="w-[225] h-[135px]" src={shoe?.imagem} alt="" />
               </div>
-              <p>iamgem da compra</p>
+              <p>imagem da compra</p>
               <p>nome do produto</p>
               <p>Detalhes do endereço de entrega</p>
             </div>
